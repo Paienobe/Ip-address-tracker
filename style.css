@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 2rem 0 2rem 0;
+    color: white;
+}
+
+.header {
+    background-image: url("./images/pattern-bg.png");
+    text-align: center;
+    height: 40vh;
+}
+
+.input-holder {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+#user_ip {
+    padding: 1rem;
+    border-radius: 1rem 0 0 1rem;
+    border: none;
+    width: 80%;
+}
+
+.enter_key {
+    padding: 1rem;
+    border: none;
+    background-color: black;
+    border-radius: 0 1rem 1rem 0;
+    width: 20%;
+}
+
+.enter_key:hover {
+    background-color: hsl(0, 0%, 17%);
+    transition: all .25s ease-in-out;
+}
+ 
+.results {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.438);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    z-index: 100000000000;
+    text-align: center;
+}
+
+h6 {
+    color: hsl(0, 0%, 59%);
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+h3 {
+    margin: 0;
+}
+
+#map { 
+    height: 60vh;
+}
+
+
+.leaflet-control-container {
+    position: absolute;
+    top: 40%;
+}
+
+hr {
+    display: none;
+}
+
+@media (min-width:950px) {
+    .container {
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    .header {
+        background-image: url("./images/pattern-bg.png");
+        text-align: center;
+        height: 35vh;
+    }
+
+    .input-holder {
+        width: 40%;
+        padding-bottom: 0;
+    }
+
+    .results {
+        max-height: 30vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        top: 28%;
+        max-width: 1240px;
+        text-align: left;
+    }
+
+    hr {
+        display: block;
+        min-height: 4rem;
+    }
+
+    #map { 
+        height: 65vh;
+    }
+}

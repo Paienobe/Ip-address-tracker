@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+   <!-- <style>
+       #map { height: 180px; }
+   </style> -->
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>IP Address Tracker</h1>
+            <div class="input-holder">
+                <input type="text" name="user_address" id="user_ip" placeholder="Search for any IP address or domain">
+                <button class="enter_key"><img src="./images/icon-arrow.svg" alt="arrow-icon"></button>
+            </div>
+        </header>
+
+        <div class="results">
+            <div class="address">
+                <h6>IP Address</h6>
+                <h3 id="address-content"></h3>
+            </div>
+            <hr>
+            <div class="location">
+                <h6>Location</h6>
+                <h3 id="location-content"></h3>
+            </div>
+            <hr>
+            <div class="timezone">
+                <h6>Timezone</h6>
+                <h3 id="timezone-content"></h3>
+            </div>
+            <hr>
+            <div class="isp">
+                <h6>ISP</h6>
+                <h3 id="isp-content"></h3>
+            </div>
+        </div>
+        <div class="map-house">
+            <div id="map"></div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
